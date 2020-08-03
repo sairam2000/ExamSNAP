@@ -1,4 +1,4 @@
-import 'package:exam_snap/screens/years.dart';
+import 'package:exam_snap/screens/selection.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -67,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => Years(title: branches[index]),
+                    builder: (context) => Selection(branch: branches[index]),
                   ),
                 );
               },

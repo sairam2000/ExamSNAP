@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "932446726969",
+    "firebase_url": "https://examsnap-35d35.firebaseio.com",
+    "project_id": "examsnap-35d35",
+    "storage_bucket": "examsnap-35d35.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:932446726969:android:1648cd6d51ddfe87c756e8",
+        "android_client_info": {
+          "package_name": "com.dev.exam_snap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "932446726969-env0ia3sr1n8sqh8jomgco5v5gv6cmb9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbA9izPGZ1uI8IoWGudk7sA7H-NoCcbgE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "932446726969-env0ia3sr1n8sqh8jomgco5v5gv6cmb9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
