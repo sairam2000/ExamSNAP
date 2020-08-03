@@ -2,6 +2,7 @@ import 'package:exam_snap/screens/subjects.dart';
 import 'package:expansion_card/expansion_card.dart';
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class Selection extends StatefulWidget {
   String branch;
   Selection({Key key, @required this.branch}) : super(key: key);
@@ -77,19 +78,19 @@ class _SelectionState extends State<Selection> {
   }
 }
 
+// ignore: must_be_immutable
 class BuildExpansionWidget extends StatelessWidget {
   String year;
+  // ignore: non_constant_identifier_names
   int year_int;
   String branch;
   BuildExpansionWidget(
       {@required this.year,
       @required this.branch,
+      // ignore: non_constant_identifier_names
       @required this.year_int,
       Key key})
       : super(key: key);
-  // const BuildExpansionWidget({
-  //   Key key,
-  // }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
