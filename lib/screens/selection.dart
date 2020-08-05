@@ -13,64 +13,84 @@ class Selection extends StatefulWidget {
 class _SelectionState extends State<Selection> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.branch.toUpperCase()),
-      ),
-      backgroundColor: Colors.white,
-      body: SingleChildScrollView(
-        child: Center(
-          child: Column(
-            children: [
-              BuildExpansionWidget(
-                year: "First Year",
-                branch: widget.branch,
-                year_int: 1,
+    return Container(
+      decoration: BoxDecoration(
+          gradient: LinearGradient(
+              stops: [0.0, 1.0],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [Color(0xFF000000), Color(0x0000FFFF)])),
+      child: Scaffold(
+        backgroundColor: Color(0x00000000),
+        body: SafeArea(
+          child: SingleChildScrollView(
+            child: Center(
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Center(
+                      child: Text(
+                        widget.branch.toUpperCase(),
+                        style: TextStyle(fontSize: 30.0, color: Colors.white),
+                      ),
+                    ),
+                  ),
+                  Divider(
+                    color: Colors.black38,
+                    thickness: 1.0,
+                  ),
+                  BuildExpansionWidget(
+                    year: "First Year",
+                    branch: widget.branch,
+                    year_int: 1,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Divider(
+                      color: Colors.black38,
+                      thickness: 1.0,
+                    ),
+                  ),
+                  BuildExpansionWidget(
+                    year: "Second Year",
+                    branch: widget.branch,
+                    year_int: 2,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Divider(
+                      color: Colors.black38,
+                      thickness: 1.0,
+                    ),
+                  ),
+                  BuildExpansionWidget(
+                    year: "Third Year",
+                    branch: widget.branch,
+                    year_int: 3,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Divider(
+                      color: Colors.black38,
+                      thickness: 1.0,
+                    ),
+                  ),
+                  BuildExpansionWidget(
+                    year: "Fourth Year",
+                    branch: widget.branch,
+                    year_int: 4,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Divider(
+                      color: Colors.black38,
+                      thickness: 1.0,
+                    ),
+                  ),
+                ],
               ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Divider(
-                  color: Colors.black38,
-                  thickness: 1.0,
-                ),
-              ),
-              BuildExpansionWidget(
-                year: "Second Year",
-                branch: widget.branch,
-                year_int: 2,
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Divider(
-                  color: Colors.black38,
-                  thickness: 1.0,
-                ),
-              ),
-              BuildExpansionWidget(
-                year: "Third Year",
-                branch: widget.branch,
-                year_int: 3,
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Divider(
-                  color: Colors.black38,
-                  thickness: 1.0,
-                ),
-              ),
-              BuildExpansionWidget(
-                year: "Fourth Year",
-                branch: widget.branch,
-                year_int: 4,
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Divider(
-                  color: Colors.black38,
-                  thickness: 1.0,
-                ),
-              ),
-            ],
+            ),
           ),
         ),
       ),
@@ -95,7 +115,7 @@ class BuildExpansionWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ExpansionCard(
-      borderRadius: 20,
+      borderRadius: 30,
       // background: Image.asset(
       //   "assets/images/planet-1.gif",
       //   fit: BoxFit.cover,
@@ -109,8 +129,8 @@ class BuildExpansionWidget extends StatelessWidget {
               Text(
                 year,
                 style: TextStyle(
-                  fontSize: 30,
-                  color: Colors.black,
+                  fontSize: 25,
+                  color: Colors.white,
                 ),
               ),
             ],
@@ -137,7 +157,7 @@ class BuildExpansionWidget extends StatelessWidget {
                   "SEM : 1",
                   style: TextStyle(
                     fontSize: 20,
-                    color: Colors.black,
+                    color: Colors.white,
                   ),
                 )),
               ),
@@ -156,7 +176,7 @@ class BuildExpansionWidget extends StatelessWidget {
                   "SEM : 2",
                   style: TextStyle(
                     fontSize: 20,
-                    color: Colors.black,
+                    color: Colors.white,
                   ),
                 )),
               ),
