@@ -121,6 +121,7 @@ class _SubjectsState extends State<Subjects> {
                                             context,
                                             MaterialPageRoute(
                                                 builder: (context) => Details(
+                                                      subject: _sub[index],
                                                       snap: snap
                                                               .data[widget.sem][
                                                           snap.data[widget.sem]

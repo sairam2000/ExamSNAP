@@ -12,7 +12,7 @@ final List<String> branches = [
   'ecm',
   'it',
   'eee',
-  'chemical'
+  'ece'
 ];
 final List<List<Color>> colors = [
   [Color(0x66FFA69E), Color(0x77861657)],

@@ -18,6 +18,9 @@ dependencies:
   flutter_pdfview:
   cloud_firestore: ^0.13.7
   expansion_card: ^0.1.0
+  downloads_path_provider: ^0.1.0
+  permission_handler: ^3.0.1 
+  toast: ^0.1.5
 
 dev_dependencies:
   flutter_test:
