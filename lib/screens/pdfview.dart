@@ -61,7 +61,7 @@ class _PdfviewState extends State<Pdfview> {
     File file = File(_downloadsDirectory.path + filename);
     File tmpfile = File(path);
     await tmpfile.copy(file.path);
-    Toast.show('Downloaded to Downloads folder as $filename', context, duration: Toast.LENGTH_LONG);
+    Toast.show('Saved to Downloads folder as $filename', context, duration: Toast.LENGTH_LONG);
   }
 
   String _localfile;
